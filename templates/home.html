@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+  {% if user.is_authenticated %}
+  {{ user.username }}! <br>
+  Main Page!!
+  {% else %}
+  	Login
+  {% endif %} 
+	<br>
+{% endblock %}
